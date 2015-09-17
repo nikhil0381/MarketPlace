@@ -5,7 +5,7 @@ ruby "2.0.0"
 # Bundle edge Rails ignstead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the databaseg for Active Record
-gem 'rails_12factor'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass', '~> 3.3.5'
@@ -24,10 +24,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 
-#group :production do
-  #gem 'pg'
- # gem 'rails_12factor'
-#end
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
 
 
 group :doc do
